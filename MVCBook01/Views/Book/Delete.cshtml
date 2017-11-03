@@ -1,0 +1,64 @@
+﻿@model MVCBook01.Models.Book
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h3>Are you sure you want to delete this?</h3>
+
+<div>
+   
+    <hr />
+    <div class="row">
+        
+        <table class="table table-striped table-bordered text-capitalize" id="BookDetailsTable">
+            <tr>
+                <th id="BookDetails" scope="row">
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <td>
+                    @Html.DisplayFor(model => model.Title)
+                </td>
+            </tr>
+            <tr>
+
+                <th scope="row">
+                    @Html.DisplayNameFor(model => model.Author)
+                </th>
+                <td>
+                    @Html.DisplayFor(model => model.Author)
+                </td>
+            </tr>
+            <tr>
+                <th id="BookDetails" scope="row">
+                    @Html.DisplayNameFor(model => model.Genre)
+                </th>
+                <td>
+                    @Html.DisplayFor(model => model.Genre)
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    @Html.DisplayNameFor(model => model.Publisher)
+                </th>
+                <td>
+                    @Html.DisplayFor(model => model.Publisher)
+                </td>
+            </tr>
+            <tr>
+                <th id="BookDetails" scope="row">
+                    @Html.DisplayNameFor(model => model.PubDate)
+                </th>
+                <td>
+                    @Html.DisplayFor(model => model.PubDate)
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    
+    <form asp-action="Delete">
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
