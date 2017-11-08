@@ -21,21 +21,19 @@
 }
 
 
-h2 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+h3 {
+   
     text-align: center;
     margin: auto;
     margin-top: 10px;
-    color: saddlebrown;
+    color: black;
     font-weight: bolder;
-    display: compact;
-    border: solid;
-    background-color:antiquewhite;
-    width: 50%;
-    border-radius: 5%;
+    
 }
 
+.iconWidth{
+    width:10px;
+}
 p{
     color:saddlebrown;
 }
@@ -52,6 +50,12 @@ th {
 
 }
 
+.iconAlign{
+ width:10%;
+}
+.indexTable{
+    margin-top:5rem;
+}
 #BookDetails {
     background-color: olivedrab;
     width: 30%;
@@ -65,13 +69,15 @@ th {
     padding-top:10rem;
 }
 a {
-    color: saddlebrown;
-}
-a:link {
-    text-decoration: none;
     color: black;
     font-weight: bolder;
+   
 }
+ a:hover {
+        text-decoration: underline;
+        color:forestgreen;
+ }
+
 
 .details{
     border:solid;
